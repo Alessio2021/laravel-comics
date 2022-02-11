@@ -24,7 +24,7 @@ html {
 }
 
 .jumbo {
-  background-image: url("../img/jumbotron.jpg");
+  background-image: url("../images/jumbotron.jpg");
   height: 400px;
 }
 
@@ -60,6 +60,26 @@ html {
   background-color: #0282F9;
   border: none;
   cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+  flex-basis: calc(16.6666666667% - 0.4em);
+  margin: 1em 0;
+}
+li .container-img {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+li .container-img img {
+  width: 100%;
+}
+li h4 {
+  color: white;
+  margin: 1em 0;
+  text-transform: uppercase;
+  display: block;
 }
 
 .header-top {
@@ -103,25 +123,25 @@ ul {
   display: flex;
   height: 100%;
 }
-ul li {
-  height: 100%;
+ul .li-header {
+  height: 86%;
   align-items: center;
   display: flex;
   list-style-type: none;
   text-align: center;
   border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
-ul li:hover {
+ul .li-header:hover {
   border-bottom: 2px solid #0282F9;
 }
-ul li a {
+ul .li-header a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
   color: black;
   margin: 1em;
 }
-ul li .active {
+ul .li-header .active {
   color: #0282F9;
   border-bottom: 3px solid #0282F9;
 }

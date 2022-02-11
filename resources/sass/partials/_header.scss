@@ -36,8 +36,8 @@
     ul {
         display: flex;
         height: 100%;
-        li {
-            height: 100%;
+        .li-header {
+            height: 86%;
             align-items: center;
             display: flex;
             list-style-type: none;

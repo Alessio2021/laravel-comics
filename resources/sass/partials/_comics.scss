@@ -1,5 +1,5 @@
 .jumbo {
-    background-image: url('../img/jumbotron.jpg');
+    background-image: url('../images/jumbotron.jpg');
     height: 400px;
 }
 .container-main {
@@ -33,5 +33,24 @@
             border: none;
             cursor: pointer;
         }
+    }
+}
+li {
+    list-style-type: none;
+    flex-basis: calc((100% / 6) - 0.4em);
+    margin: 1em 0;
+    .container-img {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+    h4 {
+        color: white;
+        margin: 1em 0;
+        text-transform: uppercase;
+        display: block;
     }
 }
