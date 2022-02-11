@@ -15,35 +15,111 @@ html {
   margin: 0 auto;
 }
 
-header {
-  height: 7em;
+.d-flex {
+  display: flex;
+}
+
+.flex-end {
+  justify-content: end;
+}
+
+.jumbo {
+  background-image: url("../img/jumbotron.jpg");
+  height: 400px;
+}
+
+.container-main {
+  background-color: #1C1C1C;
+  position: relative;
+}
+.container-main .title-absolute {
+  background-color: #0282F9;
+  padding: 0.5em 1.5em;
+  text-transform: uppercase;
+  color: white;
+  position: absolute;
+  left: 200px;
+  top: -25px;
+}
+.container-main .product-list {
+  display: flex;
+  width: 100%;
+  padding: 2em;
+  flex-wrap: wrap;
+}
+.container-main .button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.container-main .button button {
+  text-transform: uppercase;
+  padding: 1em 3em;
+  font-weight: bold;
+  color: white;
+  background-color: #0282F9;
+  border: none;
+  cursor: pointer;
+}
+
+.header-top {
+  background-color: #0282F9;
+}
+.header-top a {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.container_header {
+  height: 112px;
   display: flex;
   padding: 0;
 }
-header .header-sx {
+.container_header .header-sx {
   width: 30%;
 }
-header .header-dx {
+.container_header .header-dx {
   width: 70%;
   align-items: center;
   justify-content: end;
   display: flex;
 }
+.container_header .header-dx input {
+  height: 15px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #0282F9;
+  text-align: right;
+  font-weight: bold;
+  color: black;
+  padding: 1em;
+}
 
 ul {
   display: flex;
+  height: 100%;
 }
 ul li {
+  height: 100%;
+  align-items: center;
   display: flex;
   list-style-type: none;
+  text-align: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+ul li:hover {
+  border-bottom: 2px solid #0282F9;
 }
 ul li a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
   color: black;
-  padding: 2.9em 0;
-  margin: 0 1em;
+  margin: 1em;
 }
 ul li .active {
   color: #0282F9;

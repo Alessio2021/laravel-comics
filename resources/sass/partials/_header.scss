@@ -1,5 +1,16 @@
-    header {
-    height: 7em;
+.header-top {
+    background-color: $blueDcomics;
+    a {
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none;
+        margin: 5px;
+        cursor: pointer;
+    }
+}
+.container_header {
+    height: 112px;
     display: flex;
     padding: 0;
         .header-sx {
@@ -10,20 +21,38 @@
             align-items: center;
             justify-content: end;
             display: flex;
+            input {
+                height: 15px;
+                outline: none;
+                border: none;
+                border-bottom: 2px solid $blueDcomics;
+                text-align:right;
+                font-weight: bold;
+                color: black;
+                padding: 1em;
+            }
         }
     }
     ul {
         display: flex;
+        height: 100%;
         li {
+            height: 100%;
+            align-items: center;
             display: flex;
             list-style-type: none;
+            text-align: center;
+            border-bottom: 2px solid rgba(0, 0, 0, 0);
+            &:hover {
+                border-bottom: 2px solid $blueDcomics;
+            }
             a {
                 text-decoration: none;
                 text-transform: uppercase;
                 font-weight: bold;
                 color: black;
-                padding: 2.9em 0;
-                margin: 0 1em;
+                margin: 1em;
+                
             }
             .active {
                 color: $blueDcomics;

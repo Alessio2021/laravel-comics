@@ -1,0 +1,37 @@
+.jumbo {
+    background-image: url('../img/jumbotron.jpg');
+    height: 400px;
+}
+.container-main {
+    background-color: #1C1C1C;
+    position: relative;
+    .title-absolute {
+        background-color: $blueDcomics;
+        padding: 0.5em 1.5em;
+        text-transform: uppercase;
+        color: white;
+        position: absolute;
+        left: 200px;
+        top: -25px;
+    }
+    .product-list {
+        display: flex;
+        width: 100%;
+        padding: 2em;
+        flex-wrap: wrap;
+    }
+    .button {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        button {
+            text-transform: uppercase;
+            padding: 1em 3em;
+            font-weight: bold;
+            color: white;
+            background-color: $blueDcomics;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
