@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-size: 1em;
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  height: 7em;
+  display: flex;
+  padding: 0;
+}
+header .header-sx {
+  width: 30%;
+}
+header .header-dx {
+  width: 70%;
+  align-items: center;
+  justify-content: end;
+  display: flex;
+}
+
+ul {
+  display: flex;
+}
+ul li {
+  display: flex;
+  list-style-type: none;
+}
+ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  padding: 2.9em 0;
+  margin: 0 1em;
+}
+ul li .active {
+  color: #0282F9;
+  border-bottom: 3px solid #0282F9;
+}
