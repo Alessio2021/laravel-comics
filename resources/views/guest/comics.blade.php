@@ -1,6 +1,6 @@
 @extends('guest.layout.base')
 
-@section('documentTitle')
+@section('pageTitle')
     {{$nomePagina}}
 @endsection
 

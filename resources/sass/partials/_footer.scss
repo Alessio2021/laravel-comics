@@ -1,0 +1,103 @@
+.container-top {
+    padding: 3em 0;
+    background-color: $blueDcomics;
+    .footer-top {
+        width: 80%;
+        margin: 0 auto;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            li {
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+                img {
+                    width: 3em;
+                    margin: 0 1em;
+                }
+                a{
+                text-decoration: none;
+                text-transform: uppercase;
+                color: white;
+                }
+            }
+        }
+    }
+}
+.footer-center {
+    background-image: url(../images/footer-bg.jpg);
+    position: relative;
+    .back-logo {
+        background-image: url(../images/dc-logo-bg.png);
+        background-repeat: no-repeat;
+        background-position-x: 85%;
+        background-position-y: 50%;
+        .footer-center-sx {
+            width: 80%;
+            height: 100%;
+            padding: 2em 0;
+            display: flex;
+            ul {
+                margin: 1em;
+                display: block;
+                height: none;
+                li {
+                    list-style-type: none;
+                    margin-bottom: 3px;
+                    a {
+                        text-decoration: none;
+                        color: #7C7C7C;
+                    } 
+                }
+                .head-li {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    margin: 1em 0;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+.footer-bottom {
+    background-color: #303030;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .d-flex {
+        display: flex; 
+        .footer-bottom-sx {
+            width: 50%;
+            button {
+                text-transform: uppercase;
+                border: 1px solid $blueDcomics;
+                background-color: #303030;
+                font-weight: bold;
+                color: white;
+                padding: 1em;
+                cursor: pointer;
+            }
+        }
+        .footer-bottom-dx {
+            display: flex;
+            width: 50%;
+            justify-content: end;
+            h2 {
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                color: $blueDcomics;
+                padding: 0 1em;
+            }
+            ul {
+                display: flex;
+                li {
+                    list-style-type: none;
+                    padding: 0.5em;
+                }
+            }
+        }
+    }
+}

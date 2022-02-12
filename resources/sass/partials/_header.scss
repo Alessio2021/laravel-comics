@@ -4,8 +4,9 @@
         color: white;
         text-transform: uppercase;
         font-weight: bold;
+        font-size: 10px;
         text-decoration: none;
-        margin: 5px;
+        margin: 3px 20px;
         cursor: pointer;
     }
 }
@@ -19,8 +20,12 @@
         .header-dx {
             width: 70%;
             align-items: center;
-            justify-content: end;
+            justify-content: flex-end;
             display: flex;
+                .blue_arrow-shop {
+                color: $blueDcomics;
+                margin-left: 10px;
+                }
             input {
                 height: 15px;
                 outline: none;
@@ -30,10 +35,11 @@
                 font-weight: bold;
                 color: black;
                 padding: 1em;
+                margin-left: 1em;
             }
         }
     }
-    ul {
+    .ul-header {
         display: flex;
         height: 100%;
         .li-header {
@@ -42,9 +48,9 @@
             display: flex;
             list-style-type: none;
             text-align: center;
-            border-bottom: 2px solid rgba(0, 0, 0, 0);
+            border-bottom: 4px solid rgba(0, 0, 0, 0);
             &:hover {
-                border-bottom: 2px solid $blueDcomics;
+                border-bottom: 4px solid $blueDcomics;
             }
             a {
                 text-decoration: none;
@@ -52,9 +58,9 @@
                 font-weight: bold;
                 color: black;
                 margin: 1em;
-                
+                display: flex;
             }
-            .active {
+            &.active {
                 color: $blueDcomics;
                 border-bottom: 3px solid $blueDcomics;
             }

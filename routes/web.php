@@ -24,38 +24,84 @@ Route::get('/', function () {
 })->name('comics');
 
 Route::get('/characters', function () {
-    return view('guest.characters');
+
+    $data = [
+        'nomePagina' => 'DC - Characters'
+    ];
+
+ 
+    return view('guest.characters', $data);
 })->name('characters');
 
 Route::get('/movies', function () {
-    return view('guest.movies');
+
+    $data = [
+        'nomePagina' => 'DC - Movies'
+    ];
+
+    return view('guest.movies', $data);
 })->name('movies');
 
 Route::get('/tv', function () {
-    return view('guest.tv');
+
+    $data = [
+        'nomePagina' => 'DC - Tv'
+    ];
+
+    return view('guest.tv', $data);
 })->name('tv');
 
 Route::get('/games', function () {
-    return view('guest.games');
+
+    $data = [
+        'nomePagina' => 'DC - Games'
+    ];
+ 
+    return view('guest.games', $data);
 })->name('games');
 
 Route::get('/collectibles', function () {
-    return view('guest.collectibles');
+
+    $data = [
+        'nomePagina' => 'DC - Collectibles'
+    ];
+ 
+    return view('guest.collectibles', $data);
 })->name('collectibles');
 
 Route::get('/videos', function () {
-    return view('guest.videos');
+
+    $data = [
+        'nomePagina' => 'DC - Videos'
+    ];
+ 
+    return view('guest.videos', $data);
 })->name('videos');
 
 Route::get('/fans', function () {
-    return view('guest.fans');
+
+    $data = [
+        'nomePagina' => 'DC - Fans'
+    ];
+ 
+    return view('guest.fans', $data);
 })->name('fans');
 
 Route::get('/news', function () {
-    return view('guest.news');
+
+    $data = [
+        'nomePagina' => 'DC - News'
+    ];
+ 
+    return view('guest.news', $data);
 })->name('news');
 
 Route::get('/shop', function () {
-    return view('guest.shop');
+
+    $data = [
+        'nomePagina' => 'DC - Shop'
+    ];
+ 
+    return view('guest.shop', $data);
 })->name('shop');
 
