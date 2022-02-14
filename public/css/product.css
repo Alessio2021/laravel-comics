@@ -1,0 +1,52 @@
+.container_fluid {
+  width: 100%;
+  height: 70px;
+  background-color: #0282F9;
+}
+.container_fluid img {
+  border: 1px solid white;
+  position: absolute;
+  top: -240px;
+  left: 0;
+}
+
+.container-product {
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+}
+.container-product h2 {
+  text-transform: uppercase;
+}
+
+.sx {
+  width: 70%;
+  margin: 4em;
+}
+.sx .price,
+.sx .availability {
+  background-color: #50c950;
+  padding: 1em;
+  color: white;
+  border: 1px solid grey;
+}
+.sx .price span,
+.sx .availability span {
+  justify-self: center;
+}
+.sx .green-section {
+  margin: 1em 0;
+}
+.sx .description {
+  line-height: 25px;
+  color: gray;
+}
+
+.dx {
+  width: 30%;
+  margin: 4em 0;
+}
+.dx h4 {
+  text-align: end;
+  text-transform: uppercase;
+}
