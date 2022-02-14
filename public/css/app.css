@@ -23,11 +23,6 @@ html {
   justify-content: end;
 }
 
-.jumbo {
-  background-image: url("../images/jumbotron.jpg");
-  height: 400px;
-}
-
 .container-main {
   background-color: #1C1C1C;
   position: relative;
@@ -46,6 +41,9 @@ html {
   width: 100%;
   padding: 2em;
   flex-wrap: wrap;
+}
+.container-main .product-list a {
+  text-decoration: none;
 }
 .container-main .button {
   display: flex;
@@ -152,6 +150,11 @@ li h4 {
 .ul-header .li-header.active {
   color: #0282F9;
   border-bottom: 3px solid #0282F9;
+}
+
+.jumbo {
+  background-image: url("../images/jumbotron.jpg");
+  height: 400px;
 }
 
 .container-top {

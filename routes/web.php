@@ -23,6 +23,29 @@ Route::get('/', function () {
     return view('guest.comics', $data);
 })->name('comics');
 
+Route::get('products/{id}',function ($id) {
+
+    $collection = collect(config('comics'));
+    $product = $collection->where('id', $id);
+    $singleProduct = '';
+
+    if ($product->count() === 0) {
+        abort(404);
+    }
+
+    foreach ($product as $value) {
+        $singleProduct = $value;
+    }
+    // dd($singleProduct);
+
+    return view('guest.product', [
+        'product' => $singleProduct,
+        'nomePagina' => $singleProduct['title']
+    ]);
+
+})->name('product');
+
+
 Route::get('/characters', function () {
 
     $data = [

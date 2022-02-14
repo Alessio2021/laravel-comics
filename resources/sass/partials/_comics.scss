@@ -1,7 +1,4 @@
-.jumbo {
-    background-image: url('../images/jumbotron.jpg');
-    height: 400px;
-}
+
 .container-main {
     background-color: #1C1C1C;
     position: relative;
@@ -19,6 +16,9 @@
         width: 100%;
         padding: 2em;
         flex-wrap: wrap;
+        a {
+            text-decoration: none;
+        }
     }
     .button {
         display: flex;
